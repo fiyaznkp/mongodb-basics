@@ -1,29 +1,12 @@
-const express = require("express")
+const mongoose = require("mongoose")
+const users = require("./users.js")
 
-const app = express()
+mongoose.connect("mongodb://localhost/users")    
 
-const port = 5173
+run()
 
-let db;
+async function run (){
+    const user = await users.create({name:"fiyaz",age:26})
 
-const MongoClient = require('mongodb').MongoClient
-
-MongoClient.connect('mongodb://localhost:27017/users', (err, client) => {
-  if (err) throw err
-
-   db = client.db('users')
-
-})
-
-app.get("/",(req,res)=>{
-
-    
-  db.collection("userslist").find().toArray((err, result) => {
-    if (err) throw err
-    res.send(result)
-    console.log(result)
-  })
-    
-})
-
-app.listen(port) 
+    console.log(user)
+}

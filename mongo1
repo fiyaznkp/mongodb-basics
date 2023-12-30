@@ -17,3 +17,31 @@ it is an opensource cross platform document oriented database
 it comes under no sql databse
 
 mongo uses json like document with schemas
+
+indexes in mongo db 
+
+they are special datastructures which improves the speed and efficiency of query by allowing the databse to quickly acess and retrieve data.
+
+agregation
+
+it is the process of selecting data from a collection to process multiple document and return as computed result
+
+replication 
+
+it is storing multiple copies of data in different servers
+
+sharding 
+
+it is distributing data across multiple machines to improve scalabilty and performance
+
+mongo db driver and mongoos 
+
+there are two ways to interact with mongodb database in node js they are mongo driver and mongoos 
+
+mongoos 
+
+it is a mongodb object document mapper(odm) designed to work in an asynchronous environment .
+
+schema 
+
+it is a structure or a blueprint that defines the organization,format and rules for the data stored in the database
