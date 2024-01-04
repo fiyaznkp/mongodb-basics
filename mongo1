@@ -45,3 +45,74 @@ it is a mongodb object document mapper(odm) designed to work in an asynchronous 
 schema 
 
 it is a structure or a blueprint that defines the organization,format and rules for the data stored in the database
+
+acid properties
+
+they are a set of characteristics that ensure the relaiabilty,consistency and integrity of tranasactions in a dbms.
+
+the 4 properties of acid are
+
+1.atomicity 
+
+it ensures a transaction is happened only once . it ensures the transaction is complete or not , no partial execution 
+
+2.consistency
+
+it ensures a database remains in a valid state before and after the exceution of a transaction
+
+3.isolation
+
+it ensures multiple transactions can operate concurrently without interferring eachother 
+
+4. durabilty
+
+it ensures once a transaction is completed , the change it made to the database will be constant even in case of system failure
+
+transaction 
+
+they are sequence of actions which are treated as single operation
+
+authenctication 
+
+it is a process of authenticating someone's identity
+
+authorization 
+
+is the process of giving permission to someone to acess a particular resource
+
+session and cookie
+
+session is a server side file and cookie is client side.
+
+session is storing details of clients and cookie is sending a session id to the client .
+
+cookie is created by using the session id provided by the server
+
+jwt 
+
+it stands for json web token
+
+they are compact and self-contained way to securely transmit information between parties as json object
+
+they are commomnly used for authenctication and authorization in web applications
+
+the key components of jwt are 
+
+1.structure 
+
+jwt consists of three parts seperated by dots('.') , they are the header, the payload and signature. their format is 'header.payload.signature'
+
+
+header 
+
+it consists of two parts , the type of token which is jwt and the signing algorithm used
+
+payload 
+
+payload contains claims , claims are  statement about the user and additional data .
+
+there are 3 claims reserved, public and private
+
+signature 
+
+it is created by taking the encoded header and encoded payload a secret key incase of (HMAC) and the specified algorithm
